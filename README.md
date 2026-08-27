@@ -66,6 +66,17 @@ docker compose up -d --build
 
 生产环境不需要运行 `npm run dev`，也不需要 ngrok 或 Cloudflare Tunnel。
 
+### 离线镜像部署
+
+当服务器无法访问 Docker Hub 时，可以直接导入仓库中的 Linux AMD64 镜像：
+
+```bash
+docker load -i deploy/silkorigin-image.tar
+docker compose up -d --no-build
+```
+
+该离线镜像需要在网站代码更新后重新构建并导出，普通在线环境仍优先使用 `docker compose up -d --build`。
+
 ## 更新网站内容
 
 - 公司资料、产品、应用、技术路线、发展历程和联系方式：编辑 `src/content/site.ts`
