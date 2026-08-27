@@ -1,0 +1,9 @@
+services:
+  silkorigin:
+    build:
+      context: .
+    image: silkorigin:latest
+    container_name: silkorigin
+    restart: unless-stopped
+    ports:
+      - "${SILKORIGIN_PORT:-80}:80"
