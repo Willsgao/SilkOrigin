@@ -25,8 +25,8 @@ export const siteContent = {
     founded: '2025',
     location: '中国 · 苏州太仓',
     address: '江苏省苏州市太仓市璜泾镇沪太新路649号F栋118',
-    phone: '待补充',
-    email: '待补充',
+    phone: '15317968590',
+    email: 'silkoriginbiotech@126.com',
   },
   stats: [
     { value: '2025', label: '成立于苏州太仓' },
